@@ -72,7 +72,7 @@ header {
     padding-top: 20px;
     height: 87px;
     h1 { 
-        background: transparent url(h1.gif) no-repeat top left;
+        background: transparent url(../img/h1.png) no-repeat top left;
         margin-top: 10px;
         display: block;
         width: 219px;
@@ -83,7 +83,7 @@ header {
         overflow: hidden;
     }
     h2 { 
-        background: transparent url(h2.gif) no-repeat top left; 
+        background: transparent url(../img/h2.png) no-repeat top left; 
         margin-top: 58px; 
         margin-bottom: 40px; 
         width: 200px; 
@@ -135,7 +135,7 @@ footer {
     }
     h3 {
         &.select { 
-            background: transparent url(h3.gif) no-repeat top left; 
+            background: transparent url(../img/h3.png) no-repeat top left; 
             margin: 10px 0 5px 0; 
             width: 97px; 
             height: 16px; 
