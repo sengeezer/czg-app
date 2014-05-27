@@ -5,7 +5,7 @@
 /* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
 /* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
 
-/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+/* For CSS Zen Garden publication only, your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
 
 /* basic elements */
@@ -18,7 +18,6 @@ body {
     font: 75% georgia, sans-serif;
     line-height: 1.88889;
     color: #555753; 
-    background: #fff url(blossoms.jpg) no-repeat bottom right; 
     margin: 0; 
     padding: 0;
 }
@@ -32,23 +31,23 @@ h3 {
     font: italic normal 1.4em georgia, sans-serif;
     letter-spacing: 1px; 
     margin-bottom: 0; 
-    color: #7D775C;
+    color: #7d775c;
 }
 
 a {
     &:link { 
         font-weight: bold; 
         text-decoration: none; 
-        color: #B7A5DF;
+        color: #b7a5df;
     }
     &:visited { 
         font-weight: bold; 
         text-decoration: none; 
-        color: #D4CDDC;
+        color: #d4cddc;
     }
     &:hover, &:focus, &:active { 
         text-decoration: underline; 
-        color: #9685BA;
+        color: #9685ba;
     }
 }
 
@@ -68,11 +67,13 @@ abbr { border-bottom: none; }
     width: 100%;
 }
 
+/* Image paths for gh-pages = images/xyz.png */
+
 header {
     padding-top: 20px;
     height: 87px;
     h1 { 
-        background: transparent url(../img/h1.png) no-repeat top left;
+        background: transparent url(../images/h1.png) no-repeat top left;
         margin-top: 10px;
         display: block;
         width: 219px;
@@ -83,7 +84,7 @@ header {
         overflow: hidden;
     }
     h2 { 
-        background: transparent url(../img/h2.png) no-repeat top left; 
+        background: transparent url(../images/h2.png) no-repeat top left; 
         margin-top: 58px; 
         margin-bottom: 40px; 
         width: 200px; 
@@ -118,7 +119,10 @@ header {
 
 footer { 
     text-align: center; 
-    a:link, a:visited { margin-right: 20px; }
+    a {
+        &:link,
+        &:visited { margin-right: 20px; }
+    }
 }
 
 .sidebar {
@@ -135,29 +139,13 @@ footer {
     }
     h3 {
         &.select { 
-            background: transparent url(../img/h3.png) no-repeat top left; 
-            margin: 10px 0 5px 0; 
-            width: 97px; 
-            height: 16px; 
-            text-indent: 100%;
+            margin: 10px 0 5px 0;
             white-space: nowrap;
             overflow: hidden;
         }
-        &.archives { 
-            background: transparent url(h5.gif) no-repeat top left; 
-            margin: 25px 0 5px 0; 
-            width:57px; 
-            height: 14px; 
-            text-indent: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-        }
+        &.archives,
         &.resources { 
-            background: transparent url(h6.gif) no-repeat top left; 
-            margin: 25px 0 5px 0; 
-            width:63px; 
-            height: 10px; 
-            text-indent: 100%;
+            margin: 25px 0 5px 0;
             white-space: nowrap;
             overflow: hidden;
         }
@@ -175,8 +163,8 @@ footer {
         list-style-type: none;
     }
     a {
-        &:link { color: #988F5E; }
-        &:visited { color: #B3AE94; }
+        &:link { color: #988f5e; }
+        &:visited { color: #b3ae94; }
     }
 }
 
