@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>jQuery select / dropdown box example</title>
+
+</head>
+<body>
+
+<h1>jQuery select / dropdown box example</h1>
+ 
+<select id="language">
+	<option value="en">English</option>
+	<option value="de">Deutsch</option>
+	<option value="es">Español</option>
+	<option value="fr">Français</option>
+	<option value="it">Italiano</option>
+	<option value="zh">繁體中文</option>
+	<option value="nl">Nederlands</option>
+	<option value="pl">Polski</option>
+	<option value="pt">Português</option>
+	<option value="ru">Pусский</option>
+</select>
+ 
+<br/>
+<br/>
+<br/>
+ 
+<input type='button' value='Display Selected' id='isSelect'>
+<input type='button' value='Select China' id='selectChina'>
+<input type='button' value='Select US' id='selectUS'>
+<input type='button' value='Select Malaysia' id='selectMalaysia'>
+<input type='button' value='Disable US' id='disableUS'>
+<input type='button' value='Enable US' id='enableUS'>
+
+
+<script type="text/javascript" src="http://pages.ebay.com/jslibrary/jquery-1.8.2.min.js"></script>
+
+<script type="text/javascript">
+ 
+  $(document).ready(function(){
+ 	
+  	function fetch(country){
+  		if(country !== "en"){
+  			$("#" + country + "Div").toggle();
+  		}
+  	}
+
+  	$("#language").on('click', fetch($(this).val()));
+
+
+
+
+
+
+    $("#isSelect").click(function () {
+ 
+	alert($('#country').val());
+ 
+    });
+ 
+    $("#selectChina").click(function () {
+ 
+	$("#country").val("China");
+ 
+    });
+ 
+    $("#selectUS").click(function () {
+ 
+	$("#country").val("United State");
+ 
+    });
+ 
+    $("#selectMalaysia").click(function () {
+ 
+	$("#country").val("Malaysia");
+ 
+    });
+ 
+    $("#disableUS").click(function () {
+ 
+	$("#country option[value='United State']").attr("disabled", true);
+ 
+    });
+ 
+    $("#enableUS").click(function () {
+ 
+	$("#country option[value='United State']").attr("disabled", false);
+ 
+    });
+ 
+  });
+</script>
+
+</body>
+</html>
